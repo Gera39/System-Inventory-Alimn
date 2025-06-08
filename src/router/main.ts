@@ -1,12 +1,17 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import type { RouteRecordRaw } from 'vue-router'
-
+import InventoryPage from '../pages/InventoryPage.vue'
 const routes: Array<RouteRecordRaw> = [
     {
-        path: '/',
+        path: '/JAJA',
         name: 'Home',
         component: () => import('../App.vue')
     },
+    {
+        path:'/jerry',
+        name:'jerry',
+        component: InventoryPage
+    }
     /* {
         path: '/about',
         name: 'About',
@@ -15,7 +20,7 @@ const routes: Array<RouteRecordRaw> = [
 ]
 
 const router = createRouter({
-    history: createWebHistory(import.meta.env.BASE_URL),
+    history: createWebHistory(),
     routes
 })
 

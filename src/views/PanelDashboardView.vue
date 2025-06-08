@@ -1,7 +1,7 @@
 <template>
     <SidebarPage/>
      <div class="p-4 sm:ml-64">
-        <Router-View/>
+        <router-view></router-view>
     </div>
    
 </template>
